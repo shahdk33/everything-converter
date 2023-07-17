@@ -47,17 +47,20 @@ body {
 #container {
   background-color: rgb(244, 244, 225);
   border-radius: 15px;
-  margin-top: 10px;
+  margin: 0 auto; /* Added auto margin to center horizontally */
+  width: 60vw;
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 h1 {
   background-color: rgb(224, 224, 213);
-  margin: 0px;
+  margin: 0 auto; /* Added auto margin to center horizontally */
   padding: 10px;
-  display: inline-block;
+  display: block; /* Changed display to block */
+  width: fit-content; /* Added width to fit the content */
   border-radius: 100px;
 }
 

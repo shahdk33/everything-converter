@@ -8,7 +8,7 @@
 
         <body>
             <main>
-                <h1>Everything Converter</h1>
+                <h1>Everything Converter</h1><br>
 
             <div id ="container">
 
@@ -58,7 +58,7 @@
 
                 <h3>Kilograms to Grams</h3>
                 <input id = 'kg' placeholder="Kilograms"></input>
-                <button type ='button' onclick = 'KgToGrams(document.getElementById("kg").value);'>Convert to Grams</button>
+                <button type ='button' onclick = 'KgToGrams(document.getElementById("kgs").value);'>Convert to Grams</button>
 
                 <p id="answer7"> </p>
 
@@ -118,8 +118,8 @@
                 <p id="answer15"> </p>
 
                 <h3>Tax/Tip calculator</h3>
-                Enter Payment    <input id = 'payment' type="number" placeholder="Ex: 13.50"></input><br><br>
-                Enter Tax/Tip Percent    <input id = 'percent' type="number"  placeholder="Ex: 15"></input><br><br>
+                Enter Payment    <br><input id = 'payment'  placeholder="Ex: 13.50"></input><br><br>
+                Enter Tax/Tip Percent    <br><input id = 'percent' placeholder="Ex: 15"></input><br><br>
                 <button type ='button' onclick = 'TaxCalculator(document.getElementById("payment").value, document.getElementById("percent").value);'>Calculate Total</button>
 
                 <p id="answer16"> </p>
