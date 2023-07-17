@@ -79,3 +79,11 @@ input {
 #weight-conversion {
   padding-right: 25px;
 }
+
+/* Media query for smaller devices */
+@media only screen and (max-width: 600px) {
+  #container {
+      padding: 10px;
+      flex-direction: column;
+  }
+}
