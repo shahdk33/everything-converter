@@ -182,7 +182,7 @@ function GramsToOunces(g){
 	//changing the inner text of the Answer paragraph in the body 
 	
 	else{
-		paragraph.innerText = ("Answer: " + g/28.3495 + " oz");}
+		paragraph.innerText = ("Answer: " + g/28.35 + " oz");}
 }
 
 
