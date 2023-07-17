@@ -128,33 +128,123 @@ function GramsToKg(grams){
 
 }
 
-function image(){
-	// alert("hey! Dont touch me!!!");
+function KgTolbs(kg){
+	let paragraph = document.getElementById('answer9');
 
-	let element = document.getElementsByClassName('image');
-	//if the element is the second image
-	if(element.src='image2.png'){
+	if(isNaN(kg)){
+		paragraph.innerText = ("Please enter a valid number!");
 
-		//change the text to lalal
-		let paragraph = document.getElementById('bubble');
-		paragraph.innerHTML = ("<br>lalalalala");
-	
-		//change the image to the gif
-		let image = document.getElementById('image2');
-		image.src = ('cuteImage.gif');
-		image.id = 'image';
 	}
+
+	//changing the inner text of the Answer paragraph in the body 
+	
 	else{
-		//change to click me
-		let paragraph = document.getElementById('bubble');
-		paragraph.innerHTML = ("Click me!");
-	
-		//change to 
-		let image= document.getElementById('image');
-		image.src = ('image2.png');
-		image.id = 'image2';
+		paragraph.innerText = ("Answer: " + kg*2.20462 + " lbs");}
+}
+
+function lbsToKg(lbs){
+	let paragraph = document.getElementById('answer10');
+
+	if(isNaN(lbs)){
+		paragraph.innerText = ("Please enter a valid number!");
+
 	}
 
-
-
+	//changing the inner text of the Answer paragraph in the body 
+	
+	else{
+		paragraph.innerText = ("Answer: " + lbs/2.20462 + " kg");}
 }
+
+function OuncesToGrams(oz){
+	let paragraph = document.getElementById('answer11');
+
+	if(isNaN(oz)){
+		paragraph.innerText = ("Please enter a valid number!");
+
+	}
+
+	//changing the inner text of the Answer paragraph in the body 
+	
+	else{
+		paragraph.innerText = ("Answer: " + oz*28.3495 + " grams");}
+}
+
+
+function GramsToOunces(g){
+	let paragraph = document.getElementById('answer12');
+
+	if(isNaN(g)){
+		paragraph.innerText = ("Please enter a valid number!");
+
+	}
+
+	//changing the inner text of the Answer paragraph in the body 
+	
+	else{
+		paragraph.innerText = ("Answer: " + g/28.3495 + " oz");}
+}
+
+
+function USDtoCAD(USD){
+	let paragraph = document.getElementById('answer13');
+
+	if(isNaN(USD)){
+		paragraph.innerText = ("Please enter a valid number!");
+
+	}
+
+	//changing the inner text of the Answer paragraph in the body 
+	
+	else{
+		paragraph.innerText = ("Answer: " + USD*1.32 + " CAD");}
+}
+
+function GBPtoCAD(GBP){
+	let paragraph = document.getElementById('answer14');
+
+	if(isNaN(GBP)){
+		paragraph.innerText = ("Please enter a valid number!");
+
+	}
+
+	//changing the inner text of the Answer paragraph in the body 
+	
+	else{
+		paragraph.innerText = ("Answer: " + GBP*1.73 + " CAD");}
+}
+
+function EURtoCAD(EUR){
+	let paragraph = document.getElementById('answer15');
+
+	if(isNaN(EUR)){
+		paragraph.innerText = ("Please enter a valid number!");
+
+	}
+
+	//changing the inner text of the Answer paragraph in the body 
+	
+	else{
+		paragraph.innerText = ("Answer: " + EUR*1.48 + " CAD");}
+}
+
+function TaxCalculator(payment, percent){
+	let paragraph = document.getElementById('answer16');
+
+	if(isNaN(payment) || isNaN(percent)){
+		paragraph.innerText = ("Please enter a valid number!");
+
+	}
+
+	//changing the inner text of the Answer paragraph in the body 
+	
+	else{
+		payment = parseFloat(payment);
+		percent = parseFloat(percent);
+		let answer = payment + (payment*(percent/100));
+		paragraph.innerText = ("Answer: " + answer + " CAD");}
+}
+
+
+
+

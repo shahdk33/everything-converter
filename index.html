@@ -15,119 +15,113 @@
                 <h2>Time</h2>
 
                 <h3>Hours to Seconds</h3>
-                <input id = 'hours'></input>
+                <input id = 'hours' placeholder="hours"></input>
                 <button type ='button' onclick = 'HoursToSeconds(document.getElementById("hours").value);'>Convert to Seconds</button>
 
                 <p id="answer"> </p>
 
 
                 <h3>Seconds to Hours</h3>
-                <input id = 'seconds'></input>
+                <input id = 'seconds'placeholder="seconds"></input>
                 <button type ='button' onclick = 'SecondsToHours(document.getElementById("seconds").value);'>Convert to Hours</button>
 
                 <p id="answer2"> </p>
 
                 <h3>Hours to Minutes</h3>
-                <input id = 'hours2'></input>
+                <input id = 'hours2' placeholder="hours"></input>
                 <button type ='button' onclick = 'HoursToMinutes(document.getElementById("hours2").value);'>Convert to Minutes</button>
 
                 <p id="answer3"> </p>
 
                 <h3>Minutes to Hours</h3>
-                <input id = 'hours3'></input>
+                <input id = 'hours3' placeholder="minutes"></input>
                 <button type ='button' onclick = 'MinutesToHours(document.getElementById("hours3").value);'>Convert to Hours</button>
 
                 <p id="answer4"> </p>
 
                 <h3>Minutes to Seconds</h3>
-                <input id = 'minutes'></input>
+                <input id = 'minutes' placeholder="minutes"></input>
                 <button type ='button' onclick = 'MinutesToSeconds(document.getElementById("minutes").value);'>Convert to Seconds</button>
 
                 <p id="answer5"> </p>
 
                 <h3>Seconds to Minutes</h3>
-                <input id = 'seconds2'></input>
+                <input id = 'seconds2' placeholder="seconds"></input>
                 <button type ='button' onclick = 'SecondsToMinutes(document.getElementById("seconds2").value);'>Convert to Minutes</button>
 
                 <p id="answer6"> </p>
             </div>
 
-            <div id="other-conversion">
+            <div id="weight-conversion">
                 <h2>Weight</h2>
 
                 <h3>Kilograms to Grams</h3>
-                <input id = 'kg'></input>
+                <input id = 'kg' placeholder="Kilograms"></input>
                 <button type ='button' onclick = 'KgToGrams(document.getElementById("kg").value);'>Convert to Grams</button>
 
                 <p id="answer7"> </p>
 
 
                 <h3>Grams to Kilograms</h3>
-                <input id = 'grams'></input>
+                <input id = 'grams' placeholder="grams"></input>
                 <button type ='button' onclick = 'GramsToKg(document.getElementById("grams").value);'>Convert to Kilograms</button>
 
                 <p id="answer8"> </p>
 
                 <h3>Kilograms to Pounds</h3>
-                <input id = 'kg2'></input>
+                <input id = 'kg2' placeholder="Kilograms"></input>
                 <button type ='button' onclick = 'KgTolbs(document.getElementById("kg2").value);'>Convert to Pounds</button>
 
                 <p id="answer9"> </p>
 
                 <h3>Pounds to Kilograms</h3>
-                <input id = 'lbs'></input>
+                <input id = 'lbs' placeholder="pounds"></input>
                 <button type ='button' onclick = 'lbsToKg(document.getElementById("lbs").value);'>Convert to Kilograms</button>
 
                 <p id="answer10"> </p>
 
                 <h3>Ounces to Grams</h3>
-                <input id = 'ounces'></input>
+                <input id = 'ounces' placeholder="ounces"></input>
                 <button type ='button' onclick = 'OuncesToGrams(document.getElementById("ounces").value);'>Convert to Grams</button>
 
                 <p id="answer11"> </p>
 
                 <h3>Grams to Ounces</h3>
-                <input id = 'grams2'></input>
+                <input id = 'grams2' placeholder="grams"></input>
                 <button type ='button' onclick = 'GramsToOunces(document.getElementById("grams2").value);'>Convert to Ounces</button>
 
                 <p id="answer12"> </p>
             </div>
 
             
-            <div id="another-conversion">
+            <div id="currency-conversion">
                 <h2>Currency</h2>
 
                 <h3>USD to CAD</h3>
-                <input id = 'hours'></input>
-                <button type ='button' onclick = 'HoursToSeconds(document.getElementById("hours").value);'>Convert to CAD</button>
+                <input id = 'usd' placeholder="USD"></input>
+                <button type ='button' onclick = 'USDtoCAD(document.getElementById("usd").value);'>Convert to CAD</button>
 
-                <p id="answer"> </p>
+                <p id="answer13"> </p>
 
 
                 <h3>GBP to CAD</h3>
-                <input id = 'seconds'></input>
-                <button type ='button' onclick = 'SecondsToHours(document.getElementById("seconds").value);'>Convert to CAD</button>
+                <input id = 'gbp' placeholder="GBP"></input>
+                <button type ='button' onclick = 'GBPtoCAD(document.getElementById("gbp").value);'>Convert to CAD</button>
 
-                <p id="answer2"> </p>
+                <p id="answer14"> </p>
 
                 <h3>EUR to CAD</h3>
-                <input id = 'hours2'></input>
-                <button type ='button' onclick = 'HoursToMinutes(document.getElementById("hours2").value);'>Convert to CAD</button>
+                <input id = 'eur' placeholder="EUR"></input>
+                <button type ='button' onclick = 'EURtoCAD(document.getElementById("eur").value);'>Convert to CAD</button>
 
-                <p id="answer3"> </p>
+                <p id="answer15"> </p>
 
                 <h3>Tax/Tip calculator</h3>
-                Enter Payment    <input id = 'payment'></input><br><br>
-                Enter Tax/Tip Percent    <input id = 'percent'></input><br><br>
-                <button type ='button' onclick = 'MinutesToHours(document.getElementById("hours3").value);'>Calculate Total</button>
+                Enter Payment    <input id = 'payment' type="number" placeholder="Ex: 13.50"></input><br><br>
+                Enter Tax/Tip Percent    <input id = 'percent' type="number"  placeholder="Ex: 15"></input><br><br>
+                <button type ='button' onclick = 'TaxCalculator(document.getElementById("payment").value, document.getElementById("percent").value);'>Calculate Total</button>
 
-                <p id="answer4"> </p>
-
-                <div id="bubble">Click me!</div>
-                
-                
-             <img id='image2' class ='image' src = "image2.png" onclick="image();">
-
+                <p id="answer16"> </p>
     
             </div>
 
