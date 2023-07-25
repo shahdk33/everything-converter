@@ -1,7 +1,7 @@
 # Everything Converter
 
 ## Description
-this is a simple application that allows users to convert any metric to other metrics in one page. 
+this is a simple application that allows users to convert any metric to other metrics in one page, made to practice basic frontend web development, web design, and responsive design.
 
 ## Technologies
 HTML
