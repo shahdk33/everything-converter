@@ -1,3 +1,4 @@
+
 button {
   align-items: center;
   background-color: #5e8f0a;
@@ -25,6 +26,7 @@ button {
   user-select: none;
   -webkit-user-select: none;
   margin-top: 5px; /* Added this line */
+
 }
 
 button:hover,
@@ -50,7 +52,6 @@ body {
   width: 60vw;
   display: flex;
   justify-content: center;
-  align-items: center;
 
 }
 
@@ -64,12 +65,20 @@ h2 {
   color: #5e8f0a;
 }
 
+h3{
+  margin-top: 40px;
+}
 input {
   border-radius: 100px;
   height: 30px;
   margin-bottom: 10px;
   border: none;
 }
+
+input::placeholder{
+  padding: 4px;
+}
+
 
 #time-conversion,
 #weight-conversion {
