@@ -4,9 +4,13 @@
 this is a simple application that allows users to convert any metric to other metrics in one page, made to practice basic frontend web development, web design, and responsive design.
 
 ## Technologies
-HTML
-CSS
-JavaScript
+- HTML
+- CSS
+- JavaScript
+- Netlify
+
+## Usage
+You can visit the website directly through this link: https://everythingconverter.netlify.app/
 
 ## Future Improvements
 - I am considering creating a dropdown list to choose the first metric, and a dropdown list to choose which metric to convert to.
